@@ -127,5 +127,75 @@
   </button>
 
   <script src="js/presentation.js"></script>
+
+  <!-- Mobile: swipe horizontally to move between slides -->
+  <script>
+    (function () {
+      var THRESHOLD = 48;   /* px of horizontal travel before a swipe counts */
+      var AXIS_RATIO = 1.4; /* horizontal must clearly beat vertical drift */
+      var startX = 0;
+      var startY = 0;
+      var tracking = false;
+
+      function goTo(next) {
+        var btn = document.getElementById(next ? "nextBtn" : "prevBtn");
+        if (btn && !btn.disabled) btn.click();
+      }
+
+      function onTouchStart(event) {
+        if (event.touches.length !== 1) {
+          tracking = false;
+          return;
+        }
+        startX = event.touches[0].clientX;
+        startY = event.touches[0].clientY;
+        tracking = true;
+      }
+
+      function onTouchEnd(event) {
+        if (!tracking) return;
+        tracking = false;
+        var touch = event.changedTouches && event.changedTouches[0];
+        if (!touch) return;
+        var dx = touch.clientX - startX;
+        var dy = touch.clientY - startY;
+        if (Math.abs(dx) < THRESHOLD) return;
+        if (Math.abs(dx) < Math.abs(dy) * AXIS_RATIO) return;
+        goTo(dx < 0); /* swipe left = next, swipe right = previous */
+      }
+
+      function bind(doc) {
+        if (!doc || doc.__swipeBound) return;
+        doc.__swipeBound = true;
+        doc.addEventListener("touchstart", onTouchStart, { passive: true });
+        doc.addEventListener("touchend", onTouchEnd, { passive: true });
+        doc.addEventListener("touchcancel", function () {
+          tracking = false;
+        }, { passive: true });
+      }
+
+      function bindFrame() {
+        var frame = document.getElementById("slideFrame");
+        if (!frame) return;
+        try {
+          bind(frame.contentDocument);
+        } catch (err) {
+          /* cross-origin frame: swipe still works over the page chrome */
+        }
+      }
+
+      bind(document);
+
+      var frame = document.getElementById("slideFrame");
+      if (frame) {
+        frame.addEventListener("load", bindFrame);
+      }
+      if (document.readyState === "complete") {
+        bindFrame();
+      } else {
+        window.addEventListener("load", bindFrame);
+      }
+    })();
+  </script>
 </body>
 </html>
