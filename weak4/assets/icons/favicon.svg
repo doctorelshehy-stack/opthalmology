@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ophthalmology Week 4">
+  <rect width="64" height="64" fill="#0f2836"/>
+  <path d="M6 32c8-11 16-16 26-16s18 5 26 16c-8 11-16 16-26 16S14 43 6 32Z" fill="none" stroke="#f4efe6" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="11" fill="none" stroke="#b58b52" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="5" fill="#a4462f"/>
+</svg>
