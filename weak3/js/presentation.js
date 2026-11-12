@@ -1043,6 +1043,8 @@
     switch (event.key) {
       case "ArrowRight":
       case "PageDown":
+      case " ":
+      case "Spacebar":
         if (view === "slide") {
           event.preventDefault();
           nextSlide();
@@ -1098,8 +1100,12 @@
 
     const raw = window.location.hash.replace(/^#/, "");
 
-    if (!raw || raw === HOME_HASH || raw === "toc") {
+    if (raw === HOME_HASH || raw === "toc") {
       return { view: "home", slide: 1 };
+    }
+
+    if (!raw) {
+      return { view: "slide", slide: 1 };
     }
 
     const parsed = Number.parseInt(raw.replace(/\D/g, ""), 10);
