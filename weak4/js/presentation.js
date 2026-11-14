@@ -7,186 +7,374 @@
 (() => {
   "use strict";
 
-  const TOTAL_SLIDES = 105;
+  const TOTAL_SLIDES = 95;
   const HOME_HASH = "home";
 
   /* Each part starts at its divider, but navigation from the
      contents always lands on the first content slide. */
   const PARTS = [
     {
-      n: 1,
-      title: "Retinitis pigmentosa",
-      divider: 2,
-      start: 3,
-      end: 6,
-      summary:
-        "Inherited retinal dystrophy — terminology, inheritance, symptoms, the classic triad, associated findings and counselling.",
-      topics: [
-        ["Terminology, inheritance and prevalence", 3],
-        ["Symptoms and the classic triad", 4],
-        ["Associated ocular features", 6],
-        ["Management and counselling", 6]
+      "n": 1,
+      "title": "The retina",
+      "divider": 2,
+      "start": 3,
+      "end": 39,
+      "summary": "Retinal anatomy and circulation, diabetic and hypertensive retinopathy, vascular occlusions and retinal detachment.",
+      "topics": [
+        [
+          "Gross anatomy of the retina",
+          3
+        ],
+        [
+          "Microscopic anatomy: the retinal layers",
+          4
+        ],
+        [
+          "Blood supply of the retina",
+          5
+        ],
+        [
+          "Retinal capillaries: two groups",
+          6
+        ],
+        [
+          "The appearance of the normal fundus",
+          7
+        ],
+        [
+          "The vitreous",
+          8
+        ],
+        [
+          "Retinal vascular diseases: changes in the blood vessels",
+          9
+        ],
+        [
+          "Leakage from microcirculation",
+          10
+        ],
+        [
+          "Occlusion of microcirculation",
+          11
+        ],
+        [
+          "Diabetes mellitus",
+          12
+        ],
+        [
+          "Diabetic retinopathy: risk factors &amp; pathogenesis",
+          13
+        ],
+        [
+          "Clinical picture: symptoms &amp; early signs",
+          14
+        ],
+        [
+          "Proliferative DR &amp; diabetic maculopathy",
+          15
+        ],
+        [
+          "Treatment: medical control &amp; follow up",
+          16
+        ],
+        [
+          "Treatment: laser, injections &amp; surgery",
+          17
+        ],
+        [
+          "Arteriosclerosis: clinical signs",
+          18
+        ],
+        [
+          "Grading of arteriosclerosis",
+          19
+        ],
+        [
+          "Hypertensive retinopathy",
+          20
+        ],
+        [
+          "Hypertensive retinopathy: leakage, treatment, N.B.",
+          21
+        ],
+        [
+          "Retinopathy of toxemia of pregnancy",
+          22
+        ],
+        [
+          "Retinopathy of prematurity: pathogenesis &amp; stages",
+          23
+        ],
+        [
+          "Retinopathy of prematurity: management",
+          24
+        ],
+        [
+          "Retinal vein occlusion: pathogenesis &amp; risk factors",
+          25
+        ],
+        [
+          "Central retinal vein occlusion (CRVO)",
+          26
+        ],
+        [
+          "CRVO: complications &amp; treatment",
+          27
+        ],
+        [
+          "Branch retinal vein occlusion (BRVO)",
+          28
+        ],
+        [
+          "Retinal arterial occlusion: causes",
+          29
+        ],
+        [
+          "Central retinal artery occlusion (CRAO): early picture",
+          30
+        ],
+        [
+          "CRAO: late signs &amp; differential diagnosis",
+          31
+        ],
+        [
+          "Branch retinal artery occlusion &amp; investigations",
+          32
+        ],
+        [
+          "Treatment of retinal artery occlusion",
+          33
+        ],
+        [
+          "Retinal detachment (RD): definition &amp; classification",
+          34
+        ],
+        [
+          "I. Rhegmatogenous retinal detachment",
+          35
+        ],
+        [
+          "Rhegmatogenous RD: clinical picture",
+          36
+        ],
+        [
+          "Rhegmatogenous RD: complications &amp; treatment",
+          37
+        ],
+        [
+          "II. Tractional retinal detachment",
+          38
+        ],
+        [
+          "III. Exudative retinal detachment",
+          39
+        ]
       ]
     },
     {
-      n: 2,
-      title: "The visual pathway",
-      divider: 7,
-      start: 8,
-      end: 13,
-      summary:
-        "Optic nerve, chiasm, tract, lateral geniculate body and radiation — with the visual field defect produced at each level.",
-      topics: [
-        ["Optic nerve and chiasm", 8],
-        ["Optic tract, LGB and radiation", 9],
-        ["Three orders of neurons", 10],
-        ["Visual field defects by site", 11]
+      "n": 2,
+      "title": "Retinitis pigmentosa",
+      "divider": 40,
+      "start": 41,
+      "end": 44,
+      "summary": "Inherited retinal dystrophy \u2014 terminology, inheritance, symptoms, the classic triad, associated findings and counselling.",
+      "topics": [
+        [
+          "Terminology, inheritance and prevalence",
+          41
+        ],
+        [
+          "Symptoms and the classic triad",
+          42
+        ],
+        [
+          "Associated ocular features",
+          44
+        ],
+        [
+          "Management and counselling",
+          44
+        ]
       ]
     },
     {
-      n: 3,
-      title: "Optic neuritis",
-      divider: 14,
-      start: 15,
-      end: 20,
-      summary:
-        "Definition and ophthalmoscopic types, aetiological classification, papillitis, retrobulbar neuritis, differential diagnosis and treatment.",
-      topics: [
-        ["Definition and ophthalmoscopic types", 15],
-        ["Etiological classification", 16],
-        ["Papillitis: symptoms and signs", 17],
-        ["Fate, differential diagnosis and treatment", 19],
-        ["Retrobulbar neuritis", 20]
+      "n": 3,
+      "title": "The visual pathway",
+      "divider": 45,
+      "start": 46,
+      "end": 51,
+      "summary": "Optic nerve, chiasm, tract, lateral geniculate body and radiation \u2014 with the visual field defect produced at each level.",
+      "topics": [
+        [
+          "Optic nerve and chiasm",
+          46
+        ],
+        [
+          "Optic tract, LGB and radiation",
+          47
+        ],
+        [
+          "Three orders of neurons",
+          48
+        ],
+        [
+          "Visual field defects by site",
+          49
+        ]
       ]
     },
     {
-      n: 4,
-      title: "Papilledema",
-      divider: 21,
-      start: 22,
-      end: 26,
-      summary:
-        "Raised intracranial pressure — symptoms, early and established fundus signs, late changes, field and pupil signs, and management.",
-      topics: [
-        ["Definition and etiology", 22],
-        ["Symptoms of raised intracranial pressure", 23],
-        ["Early and established fundus signs", 24],
-        ["Long-standing and atrophic changes", 25],
-        ["Field, pupil, differential and treatment", 26]
+      "n": 4,
+      "title": "Optic neuritis",
+      "divider": 52,
+      "start": 53,
+      "end": 58,
+      "summary": "Definition and ophthalmoscopic types, aetiological classification, papillitis, retrobulbar neuritis, differential diagnosis and treatment.",
+      "topics": [
+        [
+          "Definition and ophthalmoscopic types",
+          53
+        ],
+        [
+          "Etiological classification",
+          54
+        ],
+        [
+          "Papillitis: symptoms and signs",
+          55
+        ],
+        [
+          "Fate, differential diagnosis and treatment",
+          57
+        ],
+        [
+          "Retrobulbar neuritis",
+          58
+        ]
       ]
     },
     {
-      n: 5,
-      title: "Optic atrophy",
-      divider: 27,
-      start: 28,
-      end: 30,
-      summary:
-        "Primary, secondary and consecutive atrophy, post-glaucomatous change, the clinical picture and characteristic field defects.",
-      topics: [
-        ["Definition", 28],
-        ["Primary, secondary and consecutive causes", 28],
-        ["Post-glaucomatous atrophy", 30],
-        ["Clinical picture and field defects", 29]
+      "n": 5,
+      "title": "Papilledema",
+      "divider": 59,
+      "start": 60,
+      "end": 64,
+      "summary": "Raised intracranial pressure \u2014 symptoms, early and established fundus signs, late changes, field and pupil signs, and management.",
+      "topics": [
+        [
+          "Definition and etiology",
+          60
+        ],
+        [
+          "Symptoms of raised intracranial pressure",
+          61
+        ],
+        [
+          "Early and established fundus signs",
+          62
+        ],
+        [
+          "Long-standing and atrophic changes",
+          63
+        ],
+        [
+          "Field, pupil, differential and treatment",
+          64
+        ]
       ]
     },
     {
-      n: 6,
-      title: "The eyelids: anatomy",
-      divider: 31,
-      start: 32,
-      end: 42,
-      summary:
-        "Gross and minute anatomy of the lid — margin and its borders, layers, muscles, blood and nerve supply, and the functions of the eyelids.",
-      topics: [
-        ["Gross anatomy and palpebral fissure", 32],
-        ["The eyelid margin and its four borders", 33],
-        ["Layers from skin to conjunctiva", 35],
-        ["Orbicularis, levator and Müller's muscle", 38],
-        ["Vascular, lymphatic and nerve supply", 41],
-        ["Functions of the eyelids", 42]
+      "n": 6,
+      "title": "Optic atrophy",
+      "divider": 65,
+      "start": 66,
+      "end": 68,
+      "summary": "Primary, secondary and consecutive atrophy, post-glaucomatous change, the clinical picture and characteristic field defects.",
+      "topics": [
+        [
+          "Definition",
+          66
+        ],
+        [
+          "Primary, secondary and consecutive causes",
+          66
+        ],
+        [
+          "Post-glaucomatous atrophy",
+          68
+        ],
+        [
+          "Clinical picture and field defects",
+          67
+        ]
       ]
     },
     {
-      n: 7,
-      title: "Blepharitis",
-      divider: 43,
-      start: 44,
-      end: 48,
-      summary:
-        "Anterior and posterior blepharitis — types, predisposing factors, symptoms and signs, complications and lid hygiene.",
-      topics: [
-        ["Definition and three types", 44],
-        ["Predisposing factors and etiology", 45],
-        ["Symptoms and signs", 46],
-        ["Complications", 47],
-        ["Treatment and lid hygiene", 48]
+      "n": 7,
+      "title": "The pupil",
+      "divider": 69,
+      "start": 70,
+      "end": 76,
+      "summary": "Anatomy and functions, the light reflex and near response, amaurotic pupil and RAPD, light\u2013near dissociation and causes of miosis and mydriasis.",
+      "topics": [
+        [
+          "Anatomy and functions",
+          70
+        ],
+        [
+          "The light reflex",
+          71
+        ],
+        [
+          "The near response",
+          72
+        ],
+        [
+          "Amaurotic pupil and RAPD",
+          73
+        ],
+        [
+          "Light\u2013near dissociation and Hutchinson pupil",
+          74
+        ],
+        [
+          "Causes of miosis and mydriasis",
+          75
+        ]
       ]
     },
     {
-      n: 8,
-      title: "Hordeolum and chalazion",
-      divider: 49,
-      start: 50,
-      end: 54,
-      summary:
-        "External and internal hordeolum, chalazion — definition, etiology, clinical picture, differential diagnosis and treatment.",
-      topics: [
-        ["Hordeolum externum (stye)", 51],
-        ["Hordeolum internum (infected chalazion)", 52],
-        ["Chalazion: definition and etiology", 53],
-        ["Differential diagnosis and treatment", 54]
-      ]
-    },
-    {
-      n: 9,
-      title: "Lashes and lid position",
-      divider: 55,
-      start: 56,
-      end: 78,
-      summary:
-        "Distichiasis, trichiasis, entropion, ectropion, lagophthalmos and ptosis — assessment, complications and surgical correction.",
-      topics: [
-        ["Distichiasis and trichiasis", 56],
-        ["Rubbing lashes versus trichiasis", 57],
-        ["Entropion: congenital, cicatricial, spastic, senile", 62],
-        ["Ectropion: cicatricial, senile, mechanical, paralytic", 65],
-        ["Lagophthalmos", 70],
-        ["Ptosis: assessment and surgery", 73]
-      ]
-    },
-    {
-      n: 10,
-      title: "The pupil",
-      divider: 79,
-      start: 80,
-      end: 86,
-      summary:
-        "Anatomy and functions, the light reflex and near response, amaurotic pupil and RAPD, light–near dissociation and causes of miosis and mydriasis.",
-      topics: [
-        ["Anatomy and functions", 80],
-        ["The light reflex", 81],
-        ["The near response", 82],
-        ["Amaurotic pupil and RAPD", 83],
-        ["Light–near dissociation and Hutchinson pupil", 84],
-        ["Causes of miosis and mydriasis", 85]
-      ]
-    },
-    {
-      n: 11,
-      title: "Ocular trauma",
-      divider: 87,
-      start: 88,
-      end: 104,
-      summary:
-        "Classification, chemical burns and first aid, medical treatment, physical and mechanical injury, and blunt trauma by ocular structure.",
-      topics: [
-        ["Classification of ocular injuries", 88],
-        ["Chemical injuries: agents, mechanism, first aid", 89],
-        ["Medical treatment of burns", 91],
-        ["Physical and mechanical injuries", 92],
-        ["Blunt trauma by ocular structure", 94],
-        ["Hyphema, iridodialysis and intraocular pressure", 98]
+      "n": 8,
+      "title": "Ocular trauma",
+      "divider": 77,
+      "start": 78,
+      "end": 94,
+      "summary": "Classification, chemical burns and first aid, medical treatment, physical and mechanical injury, and blunt trauma by ocular structure.",
+      "topics": [
+        [
+          "Classification of ocular injuries",
+          78
+        ],
+        [
+          "Chemical injuries: agents, mechanism, first aid",
+          79
+        ],
+        [
+          "Medical treatment of burns",
+          81
+        ],
+        [
+          "Physical and mechanical injuries",
+          82
+        ],
+        [
+          "Blunt trauma by ocular structure",
+          84
+        ],
+        [
+          "Hyphema, iridodialysis and intraocular pressure",
+          88
+        ]
       ]
     }
   ];

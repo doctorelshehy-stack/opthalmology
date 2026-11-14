@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Ophthalmology · Eyelids — Presentation</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+<body class="presentation-app" data-view="slide">
+  <a class="skip-link" href="#stageShell">Skip to slide</a>
+
+  <header class="topbar-wrap" id="topbarWrap">
+    <nav class="topbar" aria-label="Presentation controls">
+      <a class="brand" href="#home" id="brandHome" aria-label="Ophthalmology Eyelids — open table of contents">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M2.5 12S6.5 5.5 12 5.5 21.5 12 21.5 12 17.5 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3.2"/></svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Ophthalmology</strong>
+          <span>Eyelids · Clinical block</span>
+        </span>
+      </a>
+
+      <div class="nav-controls">
+        <a class="nav-btn nav-btn--home" id="homeBtn" href="../../index.html" aria-label="Home — all weeks" title="Home — all weeks">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10.5 9-7.5 9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-6h4v6"/></svg>
+          <span class="nav-label">Home</span>
+        </a>
+
+        <div class="nav-cluster" role="group" aria-label="Slide navigation">
+          <button class="nav-btn nav-btn--icon" id="prevBtn" type="button" aria-label="Previous slide" title="Previous slide (←)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+
+          <div class="counter" id="counter" aria-live="polite" aria-atomic="true">
+            <span id="currentNum">01</span>
+            <span class="counter-sep" id="counterSep" aria-hidden="true">/</span>
+            <span id="totalNum">49</span>
+          </div>
+
+          <button class="nav-btn nav-btn--icon" id="nextBtn" type="button" aria-label="Next slide" title="Next slide (→)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="progress-block">
+          <div class="progress-meta">
+            <span id="partLabel">Part 01 · Retinitis pigmentosa</span>
+            <span id="progressPercent">1%</span>
+          </div>
+          <div class="progress-track" id="progressTrack" role="progressbar" aria-label="Presentation progress" aria-valuemin="1" aria-valuemax="49" aria-valuenow="1" aria-valuetext="Slide 1 of 49" title="Click to jump to a slide">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <button class="nav-btn nav-btn--fullscreen" id="fullscreenBtn" type="button" aria-label="Enter fullscreen" aria-pressed="false" title="Fullscreen (F)">
+          <svg class="icon-enter" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          <svg class="icon-exit" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8H3V3"/><path d="M16 8h5V3"/><path d="M8 16H3v5"/><path d="M16 16h5v5"/></svg>
+          <span class="nav-label">Full screen</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="stage-shell" id="stageShell" aria-label="Slide stage">
+    <div class="stage" id="stage">
+      <iframe id="slideFrame" title="Presentation slide" src="slides/slide-001.html"></iframe>
+      <div class="load-error" id="loadError" role="alert" hidden>
+        <div class="load-error-card">
+          <span class="load-error-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 2.8 20h18.4L12 3Z"/><path d="M12 9v5"/><path d="M12 17.5h.01"/></svg>
+          </span>
+          <p class="load-error-kicker">Slide unavailable</p>
+          <h2>This slide could not be loaded.</h2>
+          <p>Check that the slide file exists and that the deck is being served over a local HTTP server.</p>
+          <button class="btn-primary" id="errorHomeBtn" type="button">Back to contents</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="toc-view" id="tocView" aria-labelledby="tocTitle" hidden>
+    <div class="toc-inner">
+      <header class="toc-hero">
+        <div class="toc-hero-copy">
+          <p class="toc-eyebrow">Ophthalmology · Eyelids</p>
+          <h1 class="toc-title" id="tocTitle" tabindex="-1">The <em>eyelids</em></h1>
+          <p class="toc-sub">A complete study deck in four parts — lid anatomy, blepharitis, hordeolum and chalazion, and lashes and lid position.</p>
+        </div>
+
+        <div class="toc-resume">
+          <span class="toc-resume-label">Your reading position</span>
+          <p class="toc-resume-slide">Slide <strong id="resumeNum">01</strong> of <span id="resumeTotal">49</span></p>
+          <button class="btn-primary" id="resumeBtn" type="button">
+            <span id="resumeLabel">Start presentation</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </button>
+          <a class="btn-ghost" href="#001" data-slide="1">Open cover</a>
+        </div>
+      </header>
+
+      <div class="toc-meta" aria-label="Deck summary">
+        <span><strong id="tocPartCount">4</strong> parts</span>
+        <span><strong id="tocTopicCount">21</strong> topics</span>
+        <span><strong id="tocSlideCount">49</strong> slides</span>
+        <span class="toc-position">Reading position <strong id="tocPosition">Slide 01</strong></span>
+      </div>
+
+      <div class="toc-grid" id="tocGrid"></div>
+
+      <footer class="toc-foot">
+        <span>Part and topic links jump directly to their first slide.</span>
+        <span><kbd>←</kbd><kbd>→</kbd> navigate · <kbd>Home</kbd> contents · <kbd>F</kbd> fullscreen</span>
+      </footer>
+    </div>
+  </section>
+
+  <div class="key-hint" id="keyHint" aria-hidden="true">
+    <kbd>←</kbd><kbd>→</kbd> navigate <span>·</span> <kbd>Home</kbd> contents <span>·</span> <kbd>F</kbd> fullscreen
+  </div>
+
+  <button class="fullscreen-exit" id="fullscreenExitBtn" type="button" aria-label="Exit fullscreen" title="Exit fullscreen (Esc)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8H3V3"/><path d="M16 8h5V3"/><path d="M8 16H3v5"/><path d="M16 16h5v5"/></svg>
+    <span>Exit fullscreen</span>
+  </button>
+
+  <script src="js/presentation.js"></script>
+
+  <!-- Mobile: swipe horizontally to move between slides -->
+  <script>
+    (function () {
+      var THRESHOLD = 48;   /* px of horizontal travel before a swipe counts */
+      var AXIS_RATIO = 1.4; /* horizontal must clearly beat vertical drift */
+      var startX = 0;
+      var startY = 0;
+      var tracking = false;
+
+      function goTo(next) {
+        var btn = document.getElementById(next ? "nextBtn" : "prevBtn");
+        if (btn && !btn.disabled) btn.click();
+      }
+
+      function onTouchStart(event) {
+        if (event.touches.length !== 1) {
+          tracking = false;
+          return;
+        }
+        startX = event.touches[0].clientX;
+        startY = event.touches[0].clientY;
+        tracking = true;
+      }
+
+      function onTouchEnd(event) {
+        if (!tracking) return;
+        tracking = false;
+        var touch = event.changedTouches && event.changedTouches[0];
+        if (!touch) return;
+        var dx = touch.clientX - startX;
+        var dy = touch.clientY - startY;
+        if (Math.abs(dx) < THRESHOLD) return;
+        if (Math.abs(dx) < Math.abs(dy) * AXIS_RATIO) return;
+        goTo(dx < 0); /* swipe left = next, swipe right = previous */
+      }
+
+      function bind(doc) {
+        if (!doc || doc.__swipeBound) return;
+        doc.__swipeBound = true;
+        doc.addEventListener("touchstart", onTouchStart, { passive: true });
+        doc.addEventListener("touchend", onTouchEnd, { passive: true });
+        doc.addEventListener("touchcancel", function () {
+          tracking = false;
+        }, { passive: true });
+      }
+
+      function bindFrame() {
+        var frame = document.getElementById("slideFrame");
+        if (!frame) return;
+        try {
+          bind(frame.contentDocument);
+        } catch (err) {
+          /* cross-origin frame: swipe still works over the page chrome */
+        }
+      }
+
+      bind(document);
+
+      var frame = document.getElementById("slideFrame");
+      if (frame) {
+        frame.addEventListener("load", bindFrame);
+      }
+      if (document.readyState === "complete") {
+        bindFrame();
+      } else {
+        window.addEventListener("load", bindFrame);
+      }
+    })();
+  </script>
+</body>
+</html>
