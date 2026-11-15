@@ -52,7 +52,9 @@ svg {
 button {
   font: inherit;
 }
-
+.margin{
+  margin-top: 5px;
+}
 /* ---------- Slide canvas ---------- */
 body.slide {
   width: 1920px;

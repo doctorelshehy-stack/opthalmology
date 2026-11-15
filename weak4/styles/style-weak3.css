@@ -73,7 +73,10 @@ body {
   flex: 0 0 auto;
   margin-bottom: 30px;
 }
-
+.slide-header-shehy {
+  flex: 0 0 auto;
+  margin-bottom: 30px;
+}
 .kicker {
   font-size: 21px;
   letter-spacing: 0.24em;

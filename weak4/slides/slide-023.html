@@ -7,14 +7,14 @@
   </head>
   <body>
     <article class="slide">
-      <header class="slide-header">
+      <header class="slide-header" >
         <p class="kicker">Retina &middot; Retinal vascular disorders</p>
         <h1 class="slide-title">Retinopathy of prematurity: pathogenesis &amp; stages</h1>
-        <div class="rule"></div>
+        <div class="rule" style="position: absolute; top:150px"></div>
       </header>
       <div class="slide-body">
         <div class="cols cols-2">
-          <div class="card">
+          <div class="card" style="align-self: flex-start;">
             <span class="card-label">Pathogenesis</span>
             <ul class="list">
               <li>Retinal blood vessels reach nasal periphery at the 8th month of gestation and reach temporal periphery one month after delivery.</li>
@@ -55,8 +55,240 @@
           </table>
           </div>
         </div>
+        <figure class="figure" style="margin-top: 3px;
+  display: flex;
+  top: 654px;
+  position: absolute;
+  width: 100%;
+  left: 16px;
+">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1833 390" width="100%" height="auto">
+  <defs>
+    <radialGradient id="retinaBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fdf2e9"/>
+      <stop offset="75%" stop-color="#fae5d3"/>
+      <stop offset="100%" stop-color="#f5cba7"/>
+    </radialGradient>
+
+    <linearGradient id="avascularBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ebedef"/>
+      <stop offset="100%" stop-color="#d5d8dc"/>
+    </linearGradient>
+
+    <linearGradient id="ridgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5b7b1"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e6b0aa"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+
+    <g id="happy-face">
+      <circle cx="-4" cy="-2" r="2" fill="#000"/>
+      <circle cx="4" cy="-2" r="2" fill="#000"/>
+      <path d="M -4,3 Q 0,7 4,3" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <g id="sad-face">
+      <path d="M -6,-3 L -2,-1 L -6,1" fill="none" stroke="#154360" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M 6,-3 L 2,-1 L 6,1" fill="none" stroke="#154360" stroke-width="1.8" stroke-linecap="round"/>
+      <ellipse cx="0" cy="5" rx="3.5" ry="2.5" fill="#641e16"/>
+    </g>
+
+    <g id="angry-face">
+      <circle cx="-5" cy="-2" r="2.8" fill="#fff" stroke="#154360" stroke-width="1.2"/>
+      <circle cx="-4" cy="-2" r="1.2" fill="#000"/>
+      <circle cx="5" cy="-2" r="2.8" fill="#fff" stroke="#154360" stroke-width="1.2"/>
+      <circle cx="4" cy="-2" r="1.2" fill="#000"/>
+      <line x1="-9" y1="-6" x2="-2" y2="-4" stroke="#154360" stroke-width="2" stroke-linecap="round"/>
+      <line x1="9" y1="-6" x2="2" y2="-4" stroke="#154360" stroke-width="2" stroke-linecap="round"/>
+      <path d="M -5,7 Q 0,3 5,7" fill="none" stroke="#154360" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <g id="crazy-face">
+      <circle cx="-5" cy="-2" r="3" fill="#fff" stroke="#000" stroke-width="1.2"/>
+      <circle cx="-4" cy="-2" r="1.2" fill="#000"/>
+      <circle cx="5" cy="-2" r="3.5" fill="#fff" stroke="#000" stroke-width="1.2"/>
+      <circle cx="6" cy="-1" r="1.4" fill="#000"/>
+      <path d="M -5,5 Q 0,1 5,5" fill="none" stroke="#000" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <style>
+    .panel { stroke: #2c3e50; stroke-width: 3; }
+    .title-box { fill: #fef9e7; stroke: #2c3e50; stroke-width: 2.2; rx: 8; }
+    .title-text { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 16.5px; font-weight: bold; fill: #1c2833; text-anchor: middle; }
+    .sub-text { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 11.5px; font-weight: 600; fill: #424949; text-anchor: middle; }
+    .bubble { fill: #ffffff; stroke: #2c3e50; stroke-width: 2; filter: url(#shadow); }
+    .arabic-text { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #1c2833; text-anchor: middle; direction: rtl; }
+    .label-en { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #566573; text-anchor: middle; }
+  </style>
+
+  <!-- STAGE 1 -->
+  <g transform="translate(0, 0)">
+    <rect x="0" y="0" width="366.6" height="390" fill="url(#retinaBg)" class="panel"/>
+    <rect x="210" y="75" width="154" height="313" fill="url(#avascularBg)"/>
+    <text x="105" y="372" class="label-en" fill="#c0392b">Vascular Retina</text>
+    <text x="288" y="372" class="label-en">Avascular Retina</text>
+
+    <g stroke-linecap="round" fill="none">
+      <path d="M 15,170 Q 110,160 206,185" stroke="#e74c3c" stroke-width="6"/>
+      <path d="M 15,240 Q 110,255 206,230" stroke="#3498db" stroke-width="6"/>
+      <path d="M 90,168 Q 145,135 206,145" stroke="#e74c3c" stroke-width="3.5"/>
+      <path d="M 90,246 Q 145,280 206,270" stroke="#3498db" stroke-width="3.5"/>
+    </g>
+
+    <line x1="210" y1="85" x2="210" y2="355" stroke="#ffffff" stroke-width="6" filter="url(#shadow)"/>
+    <line x1="210" y1="85" x2="210" y2="355" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+    <g transform="translate(210, 208)">
+      <circle cx="0" cy="0" r="14" fill="#ffffff" stroke="#2c3e50" stroke-width="2.2" filter="url(#shadow)"/>
+      <use href="#happy-face"/>
+      <circle cx="16" cy="-4" r="6" fill="#f1c40f" stroke="#2c3e50" stroke-width="1.5"/>
+      <text x="16" y="-1" font-size="8" font-weight="bold" text-anchor="middle">✋</text>
+    </g>
+
+    <rect x="18" y="12" width="330" height="52" class="title-box"/>
+    <text x="183" y="33" class="title-text">Stage 1: Demarcation Line</text>
+    <text x="183" y="52" class="sub-text">Flat white line separating vascular &amp; avascular</text>
+
+    <rect x="20" y="76" width="168" height="54" rx="12" class="bubble"/>
+    <polygon points="155,130 170,130 198,195" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="157" y1="130" x2="168" y2="130" stroke="#ffffff" stroke-width="3"/>
+    <text x="104" y="99" class="arabic-text">أنا خط حدود مسطّح..</text>
+    <text x="104" y="119" class="arabic-text">ممنوع حد يعدّي!</text>
+  </g>
+
+  <!-- STAGE 2 -->
+  <g transform="translate(366.6, 0)">
+    <rect x="0" y="0" width="366.6" height="390" fill="url(#retinaBg)" class="panel"/>
+    <rect x="210" y="75" width="154" height="313" fill="url(#avascularBg)"/>
+
+    <g stroke-linecap="round" fill="none">
+      <path d="M 15,165 Q 110,155 202,180" stroke="#e74c3c" stroke-width="6.5"/>
+      <path d="M 15,245 Q 110,260 202,235" stroke="#3498db" stroke-width="6.5"/>
+      <path d="M 175,173 C 195,185 195,225 175,242" stroke="#8e44ad" stroke-width="4" stroke-dasharray="4,2"/>
+      <path d="M 145,168 C 165,190 165,220 145,247" stroke="#8e44ad" stroke-width="3.5"/>
+    </g>
+
+    <rect x="198" y="85" width="24" height="270" rx="12" fill="url(#ridgeGrad)" stroke="#c0392b" stroke-width="2.5" filter="url(#shadow)"/>
+    <g transform="translate(210, 208)">
+      <use href="#angry-face" transform="scale(1.1)"/>
+    </g>
+
+    <rect x="18" y="12" width="330" height="52" class="title-box"/>
+    <text x="183" y="33" class="title-text">Stage 2: Ridge + Shunts</text>
+    <text x="183" y="52" class="sub-text">Elevated ridge + Shunts joining arteries &amp; veins</text>
+
+    <rect x="18" y="76" width="172" height="54" rx="12" class="bubble"/>
+    <polygon points="155,130 170,130 198,185" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="157" y1="130" x2="168" y2="130" stroke="#ffffff" stroke-width="3"/>
+    <text x="104" y="99" class="arabic-text">الخط كِبر وبقى سور عالي</text>
+    <text x="104" y="119" class="arabic-text">ووصلنا الشرايين بالأوردة!</text>
+  </g>
+
+  <!-- STAGE 3 -->
+  <g transform="translate(733.2, 0)">
+    <rect x="0" y="0" width="366.6" height="390" fill="url(#retinaBg)" class="panel"/>
+    <rect x="200" y="75" width="164" height="313" fill="url(#avascularBg)"/>
+
+    <g stroke-linecap="round" fill="none">
+      <path d="M 15,165 Q 105,155 192,180" stroke="#e74c3c" stroke-width="7"/>
+      <path d="M 15,245 Q 105,260 192,235" stroke="#3498db" stroke-width="7"/>
+    </g>
+
+    <rect x="188" y="85" width="24" height="270" rx="12" fill="url(#ridgeGrad)" stroke="#c0392b" stroke-width="2.5" filter="url(#shadow)"/>
+
+    <g filter="url(#shadow)">
+      <path d="M 212,150 Q 265,110 295,145 Q 260,165 212,175 Z" fill="#e74c3c" stroke="#641e16" stroke-width="2"/>
+      <path d="M 212,210 Q 285,185 320,225 Q 275,250 212,235 Z" fill="#c0392b" stroke="#641e16" stroke-width="2"/>
+      <path d="M 212,275 Q 265,265 290,305 Q 250,315 212,295 Z" fill="#e74c3c" stroke="#641e16" stroke-width="2"/>
+      <path d="M 285,145 L 340,115 M 310,225 L 350,210 M 280,300 L 335,330" stroke="#7f8c8d" stroke-width="3" stroke-linecap="round"/>
+      <use href="#crazy-face" transform="translate(268, 218) scale(1.1)"/>
+    </g>
+
+    <rect x="18" y="12" width="330" height="52" class="title-box"/>
+    <text x="183" y="33" class="title-text">Stage 3: Extraretinal Proliferation</text>
+    <text x="183" y="52" class="sub-text">Ridge + Fibrovascular growth into vitreous</text>
+
+    <rect x="18" y="76" width="175" height="54" rx="12" class="bubble"/>
+    <polygon points="160,130 175,130 235,195" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="162" y1="130" x2="173" y2="130" stroke="#ffffff" stroke-width="3"/>
+    <text x="105" y="99" class="arabic-text">أوعية وألياف مجنونة</text>
+    <text x="105" y="119" class="arabic-text">هجمت برّه الشبكية!</text>
+  </g>
+
+  <!-- STAGE 4 -->
+  <g transform="translate(1099.8, 0)">
+    <rect x="0" y="0" width="366.6" height="390" fill="#d6eaf8" class="panel"/>
+    <path d="M 25,340 Q 183,380 340,340" fill="none" stroke="#78281f" stroke-width="12" stroke-linecap="round"/>
+
+    <path d="M 30,332 Q 105,350 160,345 C 205,340 225,215 275,225 C 305,232 325,295 338,332"
+          fill="none" stroke="#e67e22" stroke-width="9" stroke-linecap="round" filter="url(#shadow)"/>
+
+    <path d="M 168,343 Q 250,355 335,334 C 322,295 302,235 275,229 C 228,220 208,338 168,343 Z" fill="#85c1e9" opacity="0.65"/>
+
+    <path d="M 235,155 L 258,225 M 275,148 L 275,220 M 315,160 L 298,232" stroke="#566573" stroke-width="3" stroke-dasharray="5,3"/>
+    <text x="275" y="140" class="label-en" fill="#2c3e50">Traction</text>
+
+    <g transform="translate(95, 322)">
+      <circle cx="0" cy="0" r="12" fill="#f39c12" stroke="#7e5109" stroke-width="2"/>
+      <use href="#happy-face"/>
+    </g>
+    <g transform="translate(275, 255)">
+      <circle cx="0" cy="0" r="13" fill="#f39c12" stroke="#7e5109" stroke-width="2"/>
+      <use href="#sad-face"/>
+    </g>
+
+    <rect x="18" y="12" width="330" height="52" class="title-box"/>
+    <text x="183" y="33" class="title-text">Stage 4: Subtotal Detachment</text>
+    <text x="183" y="52" class="sub-text">Partial detachment due to traction</text>
+
+    <rect x="20" y="76" width="180" height="54" rx="12" class="bubble"/>
+    <polygon points="165,130 180,130 260,242" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="167" y1="130" x2="178" y2="130" stroke="#ffffff" stroke-width="3"/>
+    <text x="110" y="99" class="arabic-text">الألياف شدّت نصّي لفوق..</text>
+    <text x="110" y="119" class="arabic-text">انفصال جزئي في الشبكية!</text>
+  </g>
+
+  <!-- STAGE 5 -->
+  <g transform="translate(1466.4, 0)">
+    <rect x="0" y="0" width="366.6" height="390" fill="#d6eaf8" class="panel"/>
+    <path d="M 25,340 Q 183,380 340,340" fill="none" stroke="#78281f" stroke-width="12" stroke-linecap="round"/>
+
+    <path d="M 30,335 Q 183,375 338,335 L 245,165 L 120,165 Z" fill="#85c1e9" opacity="0.6"/>
+
+    <path d="M 95,160 C 125,225 155,285 183,355 C 211,285 241,225 271,160"
+          fill="none" stroke="#e67e22" stroke-width="10" stroke-linecap="round" filter="url(#shadow)"/>
+    <path d="M 115,185 Q 183,210 251,185" fill="none" stroke="#d35400" stroke-width="5"/>
+
+    <ellipse cx="183" cy="160" rx="75" ry="18" fill="#bdc3c7" stroke="#566573" stroke-width="2.2" filter="url(#shadow)"/>
+    <text x="183" y="164" class="label-en" fill="#1c2833">Funnel Detachment</text>
+
+    <g transform="translate(183, 255)">
+      <circle cx="0" cy="0" r="15" fill="#f39c12" stroke="#7e5109" stroke-width="2.2"/>
+      <use href="#sad-face" transform="scale(1.2)"/>
+    </g>
+
+    <rect x="18" y="12" width="330" height="52" class="title-box"/>
+    <text x="183" y="33" class="title-text">Stage 5: Total Detachment</text>
+    <text x="183" y="52" class="sub-text">Complete funnel-shaped detachment</text>
+
+    <rect x="20" y="76" width="175" height="54" rx="12" class="bubble"/>
+    <polygon points="145,130 160,130 175,240" fill="#ffffff" stroke="#2c3e50" stroke-width="2"/>
+    <line x1="147" y1="130" x2="158" y2="130" stroke="#ffffff" stroke-width="3"/>
+    <text x="107" y="99" class="arabic-text">اتخلعت بالكامل وبقيت</text>
+    <text x="107" y="119" class="arabic-text">زي القُمع (Total)!</text>
+  </g>
+
+  <rect x="2" y="2" width="1829" height="386" fill="none" stroke="#2c3e50" stroke-width="4"/>
+</svg>
+</figure>
+
       </div>
-      <footer class="foot"><span>Retina</span><span>Ophthalmology &middot; Week 4</span></footer>
-    </article>
+      
+     
   </body>
 </html>

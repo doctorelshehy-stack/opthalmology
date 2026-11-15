@@ -56,6 +56,180 @@
           </div>
         </div>
       </div>
+        <figure style="align-self: flex-start; padding-left: 20%;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="320%" hight="50%">
+  <defs>
+    <radialGradient id="fundusGrad" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#e67e22"/>
+      <stop offset="65%" stop-color="#d35400"/>
+      <stop offset="100%" stop-color="#873600"/>
+    </radialGradient>
+
+    <radialGradient id="maculaGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#78281f"/>
+      <stop offset="60%" stop-color="#a04000"/>
+      <stop offset="100%" stop-color="#d35400" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="discGrad" cx="45%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#fef9e7"/>
+      <stop offset="70%" stop-color="#f9e79f"/>
+      <stop offset="100%" stop-color="#f39c12"/>
+    </radialGradient>
+
+    <radialGradient id="laserSpot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#f7dc6f"/>
+      <stop offset="100%" stop-color="#f1c40f" stop-opacity="0.2"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- رسمة قاع العين الأساسية (Optic Disc + Arcades + Macula) -->
+    <g id="retina-base">
+      <circle cx="200" cy="235" r="145" fill="url(#fundusGrad)" stroke="#512e00" stroke-width="3.5" filter="url(#shadow)"/>
+      <!-- Macula -->
+      <circle cx="235" cy="235" r="42" fill="url(#maculaGrad)"/>
+      <!-- Fovea center -->
+      <circle cx="235" cy="235" r="7" fill="#4a235a" opacity="0.5"/>
+      <!-- Optic Disc -->
+      <ellipse cx="135" cy="235" rx="18" ry="24" fill="url(#discGrad)" stroke="#d68910" stroke-width="1.5"/>
+      <!-- الأوعية الدموية (Arcades) -->
+      <g fill="none" stroke-linecap="round" opacity="0.85">
+        <!-- Upper Arcade -->
+        <path d="M 135,222 Q 185,155 285,175" stroke="#922b21" stroke-width="4.5"/>
+        <path d="M 135,226 Q 190,165 280,185" stroke="#1b4f72" stroke-width="5"/>
+        <path d="M 210,168 Q 235,195 245,212" stroke="#922b21" stroke-width="2.2"/>
+        <!-- Lower Arcade -->
+        <path d="M 135,248 Q 185,315 285,295" stroke="#922b21" stroke-width="4.5"/>
+        <path d="M 135,244 Q 190,305 280,285" stroke="#1b4f72" stroke-width="5"/>
+        <path d="M 210,302 Q 235,275 245,258" stroke="#922b21" stroke-width="2.2"/>
+        <!-- Nasal Vessels -->
+        <path d="M 130,225 Q 100,190 75,185" stroke="#922b21" stroke-width="3.5"/>
+        <path d="M 130,245 Q 100,280 75,285" stroke="#1b4f72" stroke-width="4"/>
+      </g>
+    </g>
+  </defs>
+
+  <style>
+    .panel { fill: #fdf2e9; stroke: #2c3e50; stroke-width: 3; }
+    .title-box { fill: #fef9e7; stroke: #2c3e50; stroke-width: 2.2; rx: 8; }
+    .title-text { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 16.5px; font-weight: bold; fill: #1c2833; text-anchor: middle; }
+    .sub-text { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #424949; text-anchor: middle; }
+    .arabic-note { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #1c2833; text-anchor: middle; direction: rtl; }
+    .label-tag { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+  </style>
+
+  <!-- ==================== 1. PRP ==================== -->
+  <g transform="translate(0, 0)">
+    <rect x="0" y="0" width="400" height="430" class="panel"/>
+    <use href="#retina-base"/>
+
+    <!-- ضربات ليزر PRP في الأطراف كلها مع ترك الـ Macula والـ Disc -->
+    <g fill="url(#laserSpot)">
+      <!-- أعلى -->
+      <circle cx="150" cy="115" r="5"/><circle cx="175" cy="110" r="5"/><circle cx="200" cy="108" r="5"/><circle cx="225" cy="110" r="5"/><circle cx="250" cy="115" r="5"/>
+      <circle cx="135" cy="135" r="5"/><circle cx="162" cy="130" r="5"/><circle cx="190" cy="128" r="5"/><circle cx="218" cy="128" r="5"/><circle cx="245" cy="132" r="5"/><circle cx="272" cy="138" r="5"/>
+      <circle cx="165" cy="150" r="5"/><circle cx="195" cy="146" r="5"/><circle cx="225" cy="146" r="5"/><circle cx="255" cy="152" r="5"/><circle cx="285" cy="160" r="5"/>
+      <!-- يمين (Temporal periphery) -->
+      <circle cx="305" cy="180" r="5"/><circle cx="322" cy="200" r="5"/><circle cx="328" cy="225" r="5"/><circle cx="328" cy="250" r="5"/><circle cx="320" cy="275" r="5"/><circle cx="302" cy="295" r="5"/>
+      <circle cx="292" cy="205" r="5"/><circle cx="302" cy="228" r="5"/><circle cx="302" cy="250" r="5"/><circle cx="292" cy="272" r="5"/>
+      <!-- أسفل -->
+      <circle cx="150" cy="355" r="5"/><circle cx="175" cy="360" r="5"/><circle cx="200" cy="362" r="5"/><circle cx="225" cy="360" r="5"/><circle cx="250" cy="355" r="5"/>
+      <circle cx="135" cy="335" r="5"/><circle cx="162" cy="340" r="5"/><circle cx="190" cy="342" r="5"/><circle cx="218" cy="342" r="5"/><circle cx="245" cy="338" r="5"/><circle cx="272" cy="332" r="5"/>
+      <circle cx="165" cy="320" r="5"/><circle cx="195" cy="324" r="5"/><circle cx="225" cy="324" r="5"/><circle cx="255" cy="318" r="5"/>
+      <!-- يسار (Nasal) -->
+      <circle cx="95" cy="155" r="5"/><circle cx="80" cy="180" r="5"/><circle cx="72" cy="208" r="5"/><circle cx="70" cy="235" r="5"/><circle cx="72" cy="262" r="5"/><circle cx="80" cy="290" r="5"/><circle cx="95" cy="315" r="5"/>
+      <circle cx="102" cy="210" r="5"/><circle cx="98" cy="235" r="5"/><circle cx="102" cy="260" r="5"/>
+    </g>
+
+    <!-- دائرة حماية حول الـ Macula -->
+    <circle cx="235" cy="235" r="44" fill="none" stroke="#2ecc71" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="235" y="238" class="label-tag">Macula Safe</text>
+
+    <!-- العنوان -->
+    <rect x="20" y="14" width="360" height="54" class="title-box"/>
+    <text x="200" y="36" class="title-text">1. Panretinal Photocoagulation (PRP)</text>
+    <text x="200" y="55" class="sub-text">For PDR, Neovascular Glaucoma &amp; Rubeosis</text>
+
+    <!-- شرح سفلي -->
+    <rect x="25" y="390" width="350" height="28" rx="6" fill="#ffffff" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="200" y="409" class="arabic-note">كيّ لأطراف الشبكية كلها مع حماية مركز الإبصار (Macula)</text>
+  </g>
+
+  <!-- ==================== 2. FOCAL LASER ==================== -->
+  <g transform="translate(400, 0)">
+    <rect x="0" y="0" width="400" height="430" class="panel"/>
+    <use href="#retina-base"/>
+
+    <!-- Microaneurysms (نقط حمراء صغيرة بتسرب) + ارتشاح موضعي -->
+    <circle cx="215" cy="218" r="14" fill="#f1c40f" opacity="0.35"/>
+    <circle cx="255" cy="252" r="13" fill="#f1c40f" opacity="0.35"/>
+
+    <!-- نقط حمراء (Microaneurysms) -->
+    <circle cx="215" cy="218" r="3" fill="#c0392b"/>
+    <circle cx="255" cy="252" r="3" fill="#c0392b"/>
+    <circle cx="222" cy="212" r="2.5" fill="#c0392b"/>
+
+    <!-- ضربات Focal Laser مباشرة على النقط المحددة -->
+    <circle cx="215" cy="218" r="5.5" fill="none" stroke="#2ecc71" stroke-width="2.5"/>
+    <circle cx="222" cy="212" r="5" fill="none" stroke="#2ecc71" stroke-width="2.2"/>
+    <circle cx="255" cy="252" r="5.5" fill="none" stroke="#2ecc71" stroke-width="2.5"/>
+
+    <!-- سهم توضيحي -->
+    <line x1="295" y1="195" x2="262" y2="246" stroke="#ffffff" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="315" y="190" class="label-tag">Leaking Spots</text>
+
+    <!-- العنوان -->
+    <rect x="20" y="14" width="360" height="54" class="title-box"/>
+    <text x="200" y="36" class="title-text">2. Focal Macular Laser</text>
+    <text x="200" y="55" class="sub-text">For Focal Clinically Significant Macular Edema</text>
+
+    <!-- شرح سفلي -->
+    <rect x="25" y="390" width="350" height="28" rx="6" fill="#ffffff" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="200" y="409" class="arabic-note">قفل نقط التسريب المحددة (Microaneurysms) بدقة</text>
+  </g>
+
+  <!-- ==================== 3. GRID LASER ==================== -->
+  <g transform="translate(800, 0)">
+    <rect x="0" y="0" width="400" height="430" class="panel"/>
+    <use href="#retina-base"/>
+
+    <!-- Diffuse Macular Edema (ارتشاح منتشر مغطي الـ Macula) -->
+    <circle cx="235" cy="235" r="40" fill="#f1c40f" opacity="0.32"/>
+
+    <!-- شبكة منتظمة (Grid Pattern) حول الـ Fovea مع ترك المركز سليم -->
+    <g fill="url(#laserSpot)">
+      <!-- صف علوي -->
+      <circle cx="212" cy="208" r="3.8"/><circle cx="227" cy="205" r="3.8"/><circle cx="243" cy="205" r="3.8"/><circle cx="258" cy="208" r="3.8"/>
+      <!-- صف أوسط علوي -->
+      <circle cx="205" cy="222" r="3.8"/><circle cx="220" cy="220" r="3.8"/><circle cx="250" cy="220" r="3.8"/><circle cx="265" cy="222" r="3.8"/>
+      <!-- صف أوسط سفلي -->
+      <circle cx="205" cy="248" r="3.8"/><circle cx="220" cy="250" r="3.8"/><circle cx="250" cy="250" r="3.8"/><circle cx="265" cy="248" r="3.8"/>
+      <!-- صف سفلي -->
+      <circle cx="212" cy="262" r="3.8"/><circle cx="227" cy="265" r="3.8"/><circle cx="243" cy="265" r="3.8"/><circle cx="258" cy="262" r="3.8"/>
+    </g>
+
+    <!-- حماية مركز الـ Fovea -->
+    <circle cx="235" cy="235" r="11" fill="none" stroke="#2ecc71" stroke-width="1.8" stroke-dasharray="2,2"/>
+    <text x="235" y="192" class="label-tag">Fovea Spared</text>
+
+    <!-- العنوان -->
+    <rect x="20" y="14" width="360" height="54" class="title-box"/>
+    <text x="200" y="36" class="title-text">3. Grid Macular Laser</text>
+    <text x="200" y="55" class="sub-text">For Diffuse Clinically Significant Macular Edema</text>
+
+    <!-- شرح سفلي -->
+    <rect x="25" y="390" width="350" height="28" rx="6" fill="#ffffff" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="200" y="409" class="arabic-note">ضربات منتظمة كشبكة لتجفيف الارتشاح المنتشر بالـ Macula</text>
+  </g>
+
+  <rect x="2" y="2" width="1196" height="426" fill="none" stroke="#2c3e50" stroke-width="4"/>
+</svg>
+</figure>
+
       <footer class="foot"><span>Retina</span><span>Ophthalmology &middot; Week 4</span></footer>
     </article>
   </body>
